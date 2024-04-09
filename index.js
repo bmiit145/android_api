@@ -70,6 +70,11 @@ app.delete('/products/:id', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    // res.redirect('/contact')
+    res.send('Hello World!');
+})
+
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
